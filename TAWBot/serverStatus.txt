@@ -1,0 +1,32 @@
+Hello **nigel**
+
+Today is**
+
+Tue Jul 20 20:24:47 UTC 2021
+**
+
+Here are the server stats as of **20:24:47**
+
+No output defined, nothing to do.
+Liquidsoap is **OFFLINE**
+
+Our Uptime is :
+**
+ 20:24:47 up 1 day, 10:18,  2 users,  load average: 0.00, 0.00, 0.00
+**
+
+Vmstat says :
+**
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 399316 252532 2755692    0    0     5    41   53   95  1  0 99  0  0
+**
+
+Mpstat says : 
+**
+Linux 5.8.0-1038-aws (TAWEncoder) 	07/20/21 	_x86_64_	(2 CPU)
+
+20:24:47     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+20:24:47     all    1.12    0.01    0.15    0.04    0.00    0.01    0.15    0.00    0.00   98.52
+**
+

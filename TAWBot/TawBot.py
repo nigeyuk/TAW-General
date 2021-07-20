@@ -41,6 +41,14 @@ async def on_member_join(member):
     role = discord.utils.get(member.server.roles, name='Awesome Listener')
     await bot.add_roles(member, role)
 
+## Linux Server status command
+@bot.command()
+async def status(ctx):
+    file = open(r"serverStatus.txt", "rt")
+    content = file.read()
+    file.close
+    await ctx.message.channel.send(content)
+
 ## !ping Command ##
 @bot.command()
 async def ping(ctx):
@@ -102,6 +110,11 @@ async def hello(ctx):
     msg = f'HI **{ctx.author.mention}** **Welcome To TranceAirWaves.FM** Enjoy your stay, Do you Like Sheep?'
     await ctx.send(msg)
 
+@bot.command()
+async def penis(ctx):
+    msg = f"Please don't use that command {ctx.author.mention} you may be hurt!"
+    await ctx.send(msg)
+
 ## !love command ##
 @bot.command()
 async def love(ctx):
@@ -155,8 +168,8 @@ async def unban(ctx, *, member):
 
 
 ## !status command, pulls in the status.txt and sends it to the channel ##
-@bot.command(name='status')
-async def status(ctx):
+@bot.command(name='tune')
+async def tune(ctx):
     file = open(r"status.txt", "rt")
     content = file.read()
     file.close
